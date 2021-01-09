@@ -1,0 +1,349 @@
+html,body {
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    text-align: center;
+    padding: 8% 0;
+    margin: 0;
+    color: black;
+    font-size: 50px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+main {
+    width: 100%;
+}
+
+.content {
+    margin: 0 auto;
+    height: 850px;
+    max-width: 1080px;
+}
+
+.sub-contents {
+    text-align: center;
+}
+
+.icon {
+    position: relative;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    margin: 0 auto;
+}
+
+.icon img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom :0;
+}
+
+/* ヘッダー */
+header {
+    background-color: black;
+    color: white;
+
+    height: 60px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+}
+
+header .material-icons {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: white;
+}
+
+header .logo {
+    position: relative;
+    margin: auto;
+    color: white;
+}
+
+
+/* ハンバーガー */
+.hamburger_list {
+    text-align: left;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    z-index: 3;
+    position: fixed;
+}
+
+.hamburger_list li {
+    padding: 10px;
+}
+
+.hamburger_list a {
+    font-size: 15px;
+    color: white;
+}
+
+/* mainタグ */
+#top {
+    background-image: url("image/top.jpg");
+    background-size: cover;
+}
+
+.top {
+    position: relative;
+}
+
+.top h1 {
+    font-size: 70px;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+/* 自己紹介 */
+#about {
+    background-color: #f5f5f5;
+}
+
+.about .sub-contents {
+    width: 100%;
+    height: 70%;
+}
+
+.about .sub-content {
+    width: 40%;
+    margin-top: 10%;
+    height: 60%;
+    padding: 0 4%;
+}
+
+.about img {
+    width: 200px;
+    height: 200px;
+}
+
+/* スキルセット */
+#skillSet {
+    background-color: #6495ed;
+}
+
+.skillSet {
+    color: #f5f5f5;
+}
+
+.skillSet h2 {
+    color: #f5f5f5;
+}
+
+.skillSet .sub-contents {
+    width: 100%;
+    height: 70%;
+}
+
+.skillSet .sub-content {
+    width: 25%;
+    margin-top: 10%;
+    height: 60%;
+    padding: 0 2%;
+}
+
+/* 成果物 */
+#portfolio {
+    background-color: white;
+}
+
+.portfolio .sub-content {
+    width: 25%;
+    height: 100%;
+    margin: 0 2%;
+}
+
+.portfolio .sub-contents {
+    width: 100%;
+    height: 50%;
+}
+
+.portfolio .sub-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.portfolio .portfolio_content {
+    background-color: black;
+    opacity: 0;
+    font-size: 13px;
+    padding-top: 20%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio .portfolio_content h3,h4,p {
+    color: white;
+}
+
+
+.portfolio .sub-content .portfolio_content h3 {
+    margin: 0;
+}
+
+.portfolio .content1 {
+    z-index: 0;
+    background-image: url("image/flyon.jp_.png");
+    background-size: cover;
+}
+
+.portfolio .content2 {
+    z-index: 0;
+    background-image: url("image/school.png");
+    background-size: cover;
+}
+
+.portfolio .content3 {
+    z-index: 0;
+    background-image: url("");
+    background-size: cover;
+}
+
+.portfolio .other {
+    text-align: center;
+}
+
+.portfolio .other {
+    margin-top: 12%;
+    height: 3%;
+    text-align: center;
+}
+
+#contactForm {
+    background-color: #f5f5f5;
+}
+
+.contactForm {
+    height: 500px;
+}
+
+.contactForm .sub-contents {
+    width: 100%;
+    height: 50%;
+}
+
+.contactForm .sub-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contactForm .icon {
+    margin: 10px;
+    background-color:white;
+}
+
+@media screen and (min-width:600px){
+    /* 横に並べる */
+    .sub-content {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about .sub-content {
+        height: 50%;
+        padding: 0 10%;
+        width: 80%;
+    }
+
+    .skillSet {
+        height: 1200px;
+    }
+
+    .skillSet .sub-content {
+        height: 33%;
+        padding: 0 10%;
+        width: 80%;
+    }
+
+    .portfolio {
+        height: 800px;
+    }
+
+    .portfolio .sub-contents {
+        height: 70%;
+    }
+
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../font/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../font/MaterialIcons-Regular.woff) format('woff'),
+      url(../font/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
