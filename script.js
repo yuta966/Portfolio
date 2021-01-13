@@ -27,13 +27,11 @@ $(document).ready(function(){
 
    $(".icon").hover(function(){
         $(this).find('img').animate({
-            'width': '55%',
-            'height': '55%'
+            'opacity':'0.6'
         },300);
     },function(){
         $(this).find('img').animate({
-            'width': '50%',
-            'height': '50%'
+            'opacity':'1'
         },300);
     }
    );
